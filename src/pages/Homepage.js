@@ -83,6 +83,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Homepage = () => {
+  const someObj = { name: "Dr. Suess", comment: "oh the places you'll go" };
   const classes = useStyles();
   const [commentInput, setCommentInput] = useState("");
   const [isSwear, setIsSwear] = useState(false);
@@ -98,6 +99,8 @@ const Homepage = () => {
   const textRef = useRef();
   const nameRef = useRef();
   const [keyNum, setKeyNum] = useState(0);
+
+  localStorage.setItem(1, JSON.stringify(someObj));
 
   console.log(typeof keyNum);
 
@@ -142,7 +145,7 @@ const Homepage = () => {
 
   useEffect(() => {
     console.log(randomEntry, "random entry");
-    console.log(JSON.parse(localStorage.getItem(randomEntry)));
+    // console.log(JSON.parse(localStorage.getItem(randomEntry)));
     setWisdom(JSON.parse(localStorage.getItem(randomEntry)));
   }, [randomEntry]);
 
