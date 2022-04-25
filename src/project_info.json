@@ -1,0 +1,36 @@
+{
+  "projects": [
+    {
+      "name": "Huddle",
+      "role": "Interaction Design",
+      "image_url": "huddle4.png",
+      "link": "./huddle",
+      "alt": "Logo of two figures with the label Huddle",
+      "description": "Huddle seeks to improve interaction (social, academic, and professional) among students in the U-M School of Information (UMSI) and provide a comprehensive archive of resource for students to access."
+    },
+    {
+      "name": "Civic User Testing: Improving Poll Work",
+      "role": "UX Researcher",
+      "image_url": "./Vote_button.png",
+      "link": "#",
+      "alt": "image of a red and blue button that reads 'Vote'",
+      "description": "We partnered with the Michigan Bureau of Elections (BOE) to improve the Election Inspector's Procedure Manual, a paper document that the BOE supplies to each polling location on Election Day"
+    },
+    {
+      "name": "Service Design Evaluation",
+      "role": "Contextual Inquiry",
+      "image_url": "./u-m.jpeg",
+      "link": "#",
+      "alt": "Blue logo of University of Michigan Dearborn ",
+      "description": "Myself and team of three other U-M students to evaluate our client's service design and give feedback on their marketing approach. "
+    },
+    {
+      "name": "Tiger Traffic",
+      "role": "Software Engineering",
+      "image_url": "./DePauwU-Logo.png",
+      "link": "#",
+      "alt": "image of the DePauw logo",
+      "description": "Building a mobile app that would allow people to check how busy areas of DePauw's campus such as the dining hall or the library were from the comfort of their dorms."
+    }
+  ]
+}
