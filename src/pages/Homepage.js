@@ -158,7 +158,6 @@ const Homepage = () => {
   }, [wisdom]);
 
   useEffect(() => {
-    localStorage.setItem(keyNum, JSON.stringify(feedback));
     setRandomEntry(Math.floor(Math.random() * (localStorage.length - 1)) + 1);
   }, []);
 
@@ -177,7 +176,7 @@ const Homepage = () => {
         benefit too.{" "}
       </Typography>
       <Box className={classes.wholeQuote}>
-        {randomEntry != 0 ? (
+        {randomEntry !== 0 && wisdom !== null ? (
           <>
             <blockquote className={classes.blockquote}>
               <Typography className={classes.text}>{wisdom.comment}</Typography>
