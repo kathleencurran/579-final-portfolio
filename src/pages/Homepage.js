@@ -156,6 +156,10 @@ const Homepage = () => {
   }, [wisdom]);
 
   useEffect(() => {
+    localStorage.setItem("1", {
+      name: "Dr Suess",
+      comment: "Oh, the places you'll go",
+    });
     setRandomEntry(Math.floor(Math.random() * (localStorage.length - 1)) + 1);
   }, []);
 
