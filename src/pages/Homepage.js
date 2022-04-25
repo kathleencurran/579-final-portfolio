@@ -87,8 +87,8 @@ const Homepage = () => {
   const [commentInput, setCommentInput] = useState("");
   const [isSwear, setIsSwear] = useState(false);
   const [feedback, setFeedback] = useState({
-    name: "",
-    comment: "",
+    name: "Dr Suess",
+    comment: "Oh the places you'll go",
   });
   // const [wisdomList, setWisdomList] = useState("");
   const [wisdom, setWisdom] = useState({});
@@ -156,10 +156,7 @@ const Homepage = () => {
   }, [wisdom]);
 
   useEffect(() => {
-    localStorage.setItem("1", {
-      name: "Dr Suess",
-      comment: "Oh, the places you'll go",
-    });
+    localStorage.setItem("1", JSON.stringify(feedback));
     setRandomEntry(Math.floor(Math.random() * (localStorage.length - 1)) + 1);
   }, []);
 
