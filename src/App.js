@@ -24,13 +24,18 @@ function App() {
       <div>
         <Navbar className={classes.root} />
         <Routes>
-          <Route path="/579-final-portfolio/projects" element={<Projects />} />
-          <Route path="/579-final-portfolio/about-me" element={<About />} />
-          <Route
-            path="/579-final-portfolio/projects/huddle"
-            element={<Huddle />}
-          />
-          <Route path="/579-final-portfolio/" element={<Homepage />} />
+          <Route path="/579-final-portfolio/projects">
+            <Projects />
+          </Route>
+          <Route path="/579-final-portfolio/about-me">
+            <About />
+          </Route>
+          <Route path="/579-final-portfolio/projects/huddle">
+            <Huddle />
+          </Route>
+          <Route path="/579-final-portfolio/">
+            <Homepage />
+          </Route>
         </Routes>
         <Footer />
       </div>
