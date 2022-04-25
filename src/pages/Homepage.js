@@ -98,9 +98,10 @@ const Homepage = () => {
   const swearList = ["crap", "damn", "shit", "fuck", "suck", "stinks"];
   const textRef = useRef();
   const nameRef = useRef();
-  const [keyNum, setKeyNum] = useState(0);
+  const [keyNum, setKeyNum] = useState(1);
 
   localStorage.setItem(1, JSON.stringify(someObj));
+  console.log(localStorage.getItem(1));
 
   console.log(typeof keyNum);
 
