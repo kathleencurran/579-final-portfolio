@@ -24,13 +24,15 @@ function App() {
       <div>
         <Navbar className={classes.root} />
         <Routes>
-          <Route path="/579-final-portfolio/projects" element={<Projects />} />
-          <Route path="/579-final-portfolio/about-me" element={<About />} />
+          <Route path="/projects">
+            <Projects />
+          </Route>
+          <Route path="/about-me" component={About} />
           <Route
             path="/579-final-portfolio/projects/huddle"
             element={<Huddle />}
           />
-          <Route path="/579-final-portfolio/" element={<Homepage />} />
+          <Route path="/" element={<Homepage />} />
         </Routes>
         <Footer />
       </div>
