@@ -27,7 +27,7 @@ function App() {
           <Route path="projects" element={<Projects />} />
           <Route path="about-me" element={<About />} />
           <Route path="projects/huddle" element={<Huddle />} />
-          <Route path="/" element={<Homepage />} />
+          <Route path="/579-final-portfolio/" element={<Homepage />} />
         </Routes>
         <Footer />
       </div>
