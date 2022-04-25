@@ -92,12 +92,14 @@ const Homepage = () => {
   });
   // const [wisdomList, setWisdomList] = useState("");
   const [wisdom, setWisdom] = useState({});
-  const [randomEntry, setRandomEntry] = useState(0);
+  const [randomEntry, setRandomEntry] = useState(1);
 
   const swearList = ["crap", "damn", "shit", "fuck", "suck", "stinks"];
   const textRef = useRef();
   const nameRef = useRef();
   const [keyNum, setKeyNum] = useState(0);
+
+  console.log(typeof keyNum);
 
   const handleSwears = (input, swears) => {
     console.log(input);
@@ -156,7 +158,7 @@ const Homepage = () => {
   }, [wisdom]);
 
   useEffect(() => {
-    localStorage.setItem("1", JSON.stringify(feedback));
+    localStorage.setItem(keyNum, JSON.stringify(feedback));
     setRandomEntry(Math.floor(Math.random() * (localStorage.length - 1)) + 1);
   }, []);
 
