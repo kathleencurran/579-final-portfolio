@@ -32,13 +32,25 @@ const Navbar = () => {
       <Box sx={{ flexGrow: 1 }}>
         <AppBar className={classes.root} position="static">
           <Toolbar className={classes.header}>
-            <Button className={classes.button} href="/" color="inherit">
+            <Button
+              className={classes.button}
+              href="/579-final-portfolio/"
+              color="inherit"
+            >
               Home
             </Button>
-            <Button className={classes.button} href="/projects" color="inherit">
+            <Button
+              className={classes.button}
+              href="/579-final-portfolio/projects"
+              color="inherit"
+            >
               Projects
             </Button>
-            <Button className={classes.button} href="/about-me" color="inherit">
+            <Button
+              className={classes.button}
+              href="579-final-portfolio/about-me"
+              color="inherit"
+            >
               About
             </Button>
           </Toolbar>
