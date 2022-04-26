@@ -35,7 +35,7 @@ const Navbar = () => {
             <Button className={classes.button} href="/" color="inherit">
               Home
             </Button>
-            <Button className={classes.button} href="projects" color="inherit">
+            <Button className={classes.button} href="/projects" color="inherit">
               Projects
             </Button>
             <Button className={classes.button} href="/about-me" color="inherit">
