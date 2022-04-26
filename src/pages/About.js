@@ -7,8 +7,8 @@ import {
   Typography,
   AccordionDetails,
 } from "@mui/material";
-import {ExpandMoreIcon} from "@mui/icons-material";
-import { makeStyles } from "@material-ui/core";
+
+import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles((theme) => ({
   text: {
@@ -77,7 +77,7 @@ const About = () => {
           <Col xs={4}>
             <Accordion sx={{ bgcolor: "#F4F2F3" }}>
               <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
+                // expandIcon={<AddIcon />}
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
@@ -101,7 +101,7 @@ const About = () => {
           <Col xs={4}>
             <Accordion sx={{ bgcolor: "#F4F2F3" }}>
               <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
+                // expandIcon={<AddIcon />}
                 aria-controls="panel2a-content"
                 id="panel2a-header"
               >
@@ -122,7 +122,7 @@ const About = () => {
           <Col xs={4}>
             <Accordion sx={{ bgcolor: "#F4F2F3" }}>
               <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
+                // expandIcon={<AddIcon />}
                 aria-controls="panel2a-content"
                 id="panel2a-header"
               >

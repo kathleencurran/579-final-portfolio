@@ -7,7 +7,7 @@ import { Routes, Route } from "react-router-dom";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Footer from "./components/Footer";
-import { ThemeProvider, makeStyles } from "@material-ui/core/styles";
+import { ThemeProvider, makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles((theme) => ({
   root: {

@@ -1,7 +1,13 @@
-import { CardActionArea, CardContent } from "@mui/material";
-import { Card, CardMedia, Typography } from "@mui/material";
+import {
+  CardActionArea,
+  CardContent,
+  Card,
+  CardMedia,
+  Typography,
+} from "@mui/material";
+
 import { Link } from "react-router-dom";
-import { makeStyles } from "@material-ui/core";
+import { makeStyles } from "@mui/styles";
 
 const useStyle = makeStyles((theme) => ({
   card: {

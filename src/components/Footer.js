@@ -1,5 +1,6 @@
-import { Box, makeStyles, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { Grid, Row, Col } from "react-flexbox-grid";
+import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles((theme) => ({
   box: {

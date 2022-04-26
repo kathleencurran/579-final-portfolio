@@ -2,8 +2,8 @@ import { Header } from "grommet";
 // import { Link, NavLink } from "react-router-dom";
 import { Grid, Row, Col } from "react-flexbox-grid";
 import { AppBar } from "@mui/material";
-import { Typography, Box, Toolbar, Button } from "@mui/material";
-import { makeStyles } from "@material-ui/core/styles";
+import { Box, Toolbar, Button } from "@mui/material";
+import { makeStyles } from "@mui/styles";
 import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
