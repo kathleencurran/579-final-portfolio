@@ -2,8 +2,9 @@ import { Header } from "grommet";
 // import { Link, NavLink } from "react-router-dom";
 import { Grid, Row, Col } from "react-flexbox-grid";
 import { AppBar } from "@mui/material";
-import { Typography, Box, Toolbar, Button, Link } from "@mui/material";
+import { Typography, Box, Toolbar, Button } from "@mui/material";
 import { makeStyles } from "@material-ui/core";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -32,13 +33,29 @@ const Navbar = () => {
       <Box sx={{ flexGrow: 1 }}>
         <AppBar className={classes.root} position="static">
           <Toolbar className={classes.header}>
-            <Button className={classes.button} href="/" color="inherit">
+            <Button
+              component={Link}
+              to="/home"
+              className={classes.button}
+              color="inherit"
+            >
               Home
             </Button>
-            <Button className={classes.button} href="/projects" color="inherit">
+            <Button
+              component={Link}
+              to="/projects"
+              className={classes.button}
+              color="inherit"
+            >
               Projects
             </Button>
-            <Button className={classes.button} href="/about-me" color="inherit">
+            <Button
+              component={Link}
+              to="/projects"
+              component={Link}
+              className={classes.button}
+              color="inherit"
+            >
               About
             </Button>
           </Toolbar>

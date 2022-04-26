@@ -24,9 +24,10 @@ function App() {
       <div>
         <Navbar className={classes.root} />
         <Routes>
-          <Route exact path="/about-me" element={<About />} />
-          <Route exact path="/projects" element={<Projects />} />
-          <Route exact path="/projects/huddle" element={<Huddle />} />
+          <Route path="/about-me" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/huddle" element={<Huddle />} />
+          <Route path="/home" element={<Homepage />} />
           <Route exact path="/" element={<Homepage />} />
         </Routes>
         <Footer />
