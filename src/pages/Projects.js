@@ -1,7 +1,7 @@
 import ProjectCard from "../components/ProjectCard";
 import { Grid, Row, Col } from "react-flexbox-grid";
 import projects from "../project_info.json";
-import { makeStyles } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
 import { Box, Button } from "@mui/material";
 
 const useStyles = makeStyles((theme) => ({

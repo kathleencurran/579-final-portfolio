@@ -1,5 +1,4 @@
-import { Box } from "@mui/material";
-import { makeStyles, Typography } from "@material-ui/core";
+import { Box, makeStyles, Typography } from "@mui/material";
 import { Grid, Row, Col } from "react-flexbox-grid";
 
 const useStyles = makeStyles((theme) => ({

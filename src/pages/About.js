@@ -1,6 +1,5 @@
 import { Box, Image, Paragraph } from "grommet";
 import { Grid, Row, Col } from "react-flexbox-grid";
-import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
 
 import {
   Accordion,
