@@ -25,7 +25,10 @@ function App() {
         <Navbar className={classes.root} />
         <Routes>
           <Route path="/about-me" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route
+            path="/579-final-portfolio//#/projects"
+            element={<Projects />}
+          />
           <Route path="/projects/huddle" element={<Huddle />} />
           <Route path="/home" element={<Homepage />} />
           <Route exact path="/" element={<Homepage />} />
