@@ -85,8 +85,8 @@ const About = () => {
                 <h2>My Education</h2>
               </AccordionSummary>
               <AccordionDetails>
+                <h3>University of Michigan School of Information</h3>
                 <Typography>
-                  <h3>University of Michigan School of Information</h3>
                   <b>Master of Science</b> in Human-Computer Interaction and UX
                   Research and Design<br></br>
                   <em>In Progress</em>

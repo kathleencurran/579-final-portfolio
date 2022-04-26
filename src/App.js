@@ -7,7 +7,7 @@ import { Routes, Route } from "react-router-dom";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Footer from "./components/Footer";
-import { makeStyles } from "@material-ui/core";
+import { ThemeProvider, makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -20,19 +20,19 @@ const useStyles = makeStyles((theme) => ({
 function App() {
   const classes = useStyles();
   return (
-    <main>
-      <div>
-        <Navbar className={classes.root} />
-        <Routes>
-          <Route path="/about-me" element={<About />} />
-          <Route path="projects" element={<Projects />} />
-          <Route path="#/projects/huddle" element={<Huddle />} />
-          <Route path="#/home" element={<Homepage />} />
-          <Route exact path="/" element={<Homepage />} />
-        </Routes>
-        <Footer />
-      </div>
-    </main>
+    // <ThemeProvider>
+    <div>
+      <Navbar className={classes.root} />
+      <Routes>
+        <Route path="/about-me" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/projects/huddle" element={<Huddle />} />
+        <Route path="/home" element={<Homepage />} />
+        <Route exact path="/" element={<Homepage />} />
+      </Routes>
+      <Footer />
+    </div>
+    // </ThemeProvider>
   );
 }
 
