@@ -8,7 +8,7 @@ import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <HashRouter basename="/579-final-portfolio/">
+    <HashRouter basename="/">
       <App />
     </HashRouter>
   </React.StrictMode>,
